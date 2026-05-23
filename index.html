@@ -10,8 +10,9 @@
   <style>
     :root {
       --text: #222222;
-      --link: #006b7a;
-      --heading-blue: #0b57d0;
+      --muted: #666666;
+      --link: #0645ad;
+      --heading: #222222;
       --bg: #ffffff;
     }
 
@@ -29,68 +30,70 @@
 
     .site-title {
       position: absolute;
-      top: 14px;
-      left: 20px;
+      top: 18px;
+      left: 24px;
       font-family: Arial, Helvetica, sans-serif;
-      font-size: 18px;
-      color: #666666;
+      font-size: 17px;
+      color: var(--muted);
     }
 
     .page {
-      max-width: 1120px;
+      max-width: 1040px;
       margin: 0 auto;
-      padding: 82px 28px 70px;
+      padding: 86px 32px 70px;
     }
 
     .hero {
       display: grid;
-      grid-template-columns: minmax(0, 680px) 260px;
-      gap: 58px;
+      grid-template-columns: minmax(0, 650px) 240px;
+      gap: 54px;
       align-items: start;
-      margin-bottom: 58px;
+      margin-bottom: 60px;
     }
 
     .intro p {
-      margin: 0 0 24px;
-      font-size: 21px;
+      margin: 0 0 22px;
+      font-size: 20px;
     }
 
     a {
       color: var(--link);
       text-decoration: underline;
+      text-underline-offset: 2px;
     }
 
     .links p {
-      margin: 16px 0;
-      font-size: 21px;
+      margin: 14px 0;
+      font-size: 20px;
     }
 
     .photo img {
-      width: 260px;
+      width: 240px;
       height: auto;
       display: block;
     }
 
     h2 {
-      margin: 0 0 34px;
-      color: var(--heading-blue);
-      font-size: 28px;
+      margin: 0 0 32px;
+      color: var(--heading);
+      font-size: 25px;
       font-weight: 400;
     }
 
     .paper {
-      margin-bottom: 36px;
+      margin-bottom: 34px;
     }
 
     .paper-title {
-      margin: 0 0 14px;
-      font-size: 24px;
+      margin: 0 0 12px;
+      font-size: 22px;
       font-weight: 700;
+      line-height: 1.35;
     }
 
     .paper-authors,
     .paper-presentations {
-      margin: 0 0 14px;
+      margin: 0 0 12px;
       font-size: 18px;
       color: var(--text);
     }
@@ -99,10 +102,16 @@
       font-weight: 700;
     }
 
+    .last-updated {
+      margin-top: 56px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
     @media (max-width: 760px) {
       .site-title {
         position: static;
-        padding: 14px 20px 0;
+        padding: 14px 22px 0;
       }
 
       .page {
@@ -112,15 +121,29 @@
       .hero {
         grid-template-columns: 1fr;
         gap: 28px;
+        margin-bottom: 46px;
+      }
+
+      .intro p,
+      .links p {
+        font-size: 18px;
       }
 
       .photo img {
         width: 220px;
       }
 
-      .intro p,
-      .links p {
-        font-size: 19px;
+      h2 {
+        font-size: 24px;
+      }
+
+      .paper-title {
+        font-size: 20px;
+      }
+
+      .paper-authors,
+      .paper-presentations {
+        font-size: 17px;
       }
     }
   </style>
@@ -141,7 +164,10 @@
           <p>
             <a href="YiyuanZhang_CV.pdf" target="_blank" rel="noopener">Curriculum Vitae</a>
           </p>
-          <p>Email: yiyuan.zhang@mccombs.utexas.edu</p>
+          <p>
+            Email:
+            <a href="mailto:yiyuan.zhang@mccombs.utexas.edu">yiyuan.zhang@mccombs.utexas.edu</a>
+          </p>
         </div>
       </div>
 
@@ -178,6 +204,8 @@
         </p>
       </article>
     </section>
+
+    <p class="last-updated">Last updated: May 2026</p>
   </main>
 </body>
 </html>
