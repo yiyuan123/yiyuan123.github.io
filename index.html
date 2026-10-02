@@ -15,8 +15,8 @@
       --text: #222222;
       --muted: #666666;
       --heading: #222222;
-      --link: #333333;
-      --link-hover: #000000;
+      --link: #0645ad;
+      --link-hover: #003b8e;
       --rule: #dddddd;
     }
 
@@ -106,7 +106,7 @@
       color: var(--link);
       text-decoration-thickness: 1px;
       text-underline-offset: 4px;
-      text-decoration-color: #999999;
+      text-decoration-color: currentColor;
     }
 
     a:hover {
@@ -169,13 +169,13 @@
     }
 
     .paper-title a {
-      color: var(--heading);
+      color: var(--link);
       text-decoration: none;
     }
 
     .paper-title a:hover,
     .paper-title a:focus-visible {
-      color: var(--link);
+      color: var(--link-hover);
       text-decoration: underline;
       text-decoration-thickness: 1px;
       text-underline-offset: 4px;
