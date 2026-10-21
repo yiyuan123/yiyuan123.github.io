@@ -156,13 +156,16 @@
       line-height: 1.4;
     }
 
-    .paper-title a {
+    .paper-title a,
+    .paper-authors a {
       color: var(--link);
       text-decoration: none;
     }
 
     .paper-title a:hover,
-    .paper-title a:focus-visible {
+    .paper-title a:focus-visible,
+    .paper-authors a:hover,
+    .paper-authors a:focus-visible {
       color: var(--link-hover);
       text-decoration: underline;
       text-decoration-thickness: 1px;
@@ -179,6 +182,10 @@
       max-width: 48em;
       margin: 0 0 12px;
       line-height: 1.65;
+    }
+
+    .paper-links {
+      margin: 0 0 12px;
     }
 
     .paper-presentations {
@@ -322,6 +329,9 @@
         <p class="paper-summary">
           We show how post-crisis bank regulation reduced construction credit
           and slowed the recovery of new housing supply.
+        </p>
+        <p class="paper-links">
+          Research brief: <a href="https://www.cato.org/research-briefs-economic-policy/bank-regulation-construction-financing-supply-new-housing" target="_blank" rel="noopener">Cato Institute</a>
         </p>
         <p class="paper-presentations">
           <strong>Presentations:</strong> Rice University (2026);
