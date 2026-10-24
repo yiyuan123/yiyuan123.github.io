@@ -157,7 +157,8 @@
     }
 
     .paper-title a,
-    .paper-authors a {
+    .paper-authors a,
+    .paper-authors .author-name {
       color: var(--link);
       text-decoration: none;
     }
@@ -165,7 +166,8 @@
     .paper-title a:hover,
     .paper-title a:focus-visible,
     .paper-authors a:hover,
-    .paper-authors a:focus-visible {
+    .paper-authors a:focus-visible,
+    .paper-authors .author-name:hover {
       color: var(--link-hover);
       text-decoration: underline;
       text-decoration-thickness: 1px;
@@ -324,7 +326,7 @@
         </h3>
         <p class="paper-authors">
           with <a href="https://www.mccombs.utexas.edu/faculty-and-research/faculty-directory/profile/?username=titmans" target="_blank" rel="noopener">Sheridan Titman</a>
-          and <a href="https://www.bschool.cuhk.edu.hk/staff/xu-deheng/" target="_blank" rel="noopener">Deheng Xu</a>
+          and <span class="author-name">Deheng Xu</span>
         </p>
         <p class="paper-summary">
           We show how post-crisis bank regulation reduced construction credit
